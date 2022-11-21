@@ -1,11 +1,24 @@
+import React from 'react';
+
+
+import Homepage from './Pages/Homepage';
+
 
 
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
-      <p>This is my Portfolio</p>
+      <Homepage />
+     
     </div>
+
+
+
+
+
+
+
+
   );
 }
 
