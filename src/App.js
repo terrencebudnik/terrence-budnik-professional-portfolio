@@ -1,23 +1,14 @@
 import React from 'react';
 
-
-import Homepage from './Pages/Homepage';
+import HomePage from './Pages/Homepage'
 
 
 
 function App() {
   return (
-    <div>
-      <Homepage />
-     
-    </div>
-
-
-
-
-
-
-
+   <>
+     <HomePage />
+   </>
 
   );
 }

@@ -1,16 +1,15 @@
-import Header from '../components/Header'
+import Header from '../components/Header';
+import Nav from '../components/Nav'
+
 
 
 export default function Homepage() {
 
-
     return (
-
-        <div>
-           
-            <Header />
-           
-        </div>
+        <>
+           <Header />
+           <Nav />
+        </>
 
 
     );

@@ -1,0 +1,68 @@
+.column-one {
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column-two {
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column-three {
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column-four {
+    height: 400px;
+    width: 400px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portal {
+    height: 200px;
+    width: 200px;
+    background-color: transparent;
+    transform: rotateX(65deg);
+    border-radius: 50px;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 1px 10px 50px white;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+.portal-text {
+    font-family: 'Special Elite', cursive;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 1px 90px 50px white;
+    background-color: transparent;
+    
+}
+
+@keyframes pulse {
+    from {box-shadow: 1px 10px 0px white;}
+    to {box-shadow: 1px 10px 50px white;}
+  }

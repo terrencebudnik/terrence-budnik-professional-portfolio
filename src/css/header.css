@@ -1,44 +1,16 @@
 .header {
+    background: linear-gradient(#0e0202, hsl(235, 89%, 37%));
+    height: 200px;
+    justify-content: center;
+    align-items: center;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    text-align: center;
-
+    align-items: center;
 }
 
-
-.animation {
-    white-space: nowrap;
-    overflow: hidden;
+.name {
     font-family: 'Special Elite', cursive;
     color: white;
     font-size: 70px;
-    animation: animated-text 2s steps(30, end) 1s 1 normal both;
-}
 
-@keyframes animated-text {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 700px;
-    }
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    text-align: center;
-
-}
-
-.navItems {
-    flex: 25%; 
-    font-family: 'Special Elite', cursive;
-    color: white;
-    font-size: 40px;
-    background-color: transparent;
-    
 }
