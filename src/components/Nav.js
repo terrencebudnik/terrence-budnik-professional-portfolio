@@ -10,7 +10,7 @@ export default function Nav() {
         <>
          
            
-           <div className='container'>
+           <div className='nav'>
                 <Columns />
 
            </div>
