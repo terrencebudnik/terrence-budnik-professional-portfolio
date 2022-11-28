@@ -47,7 +47,17 @@
     animation-name: pulse;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    
+
+}
+
+@keyframes pulse {
+    from {
+        box-shadow: 1px 10px 0px white;
+    }
+
+    to {
+        box-shadow: 1px 10px 50px white;
+    }
 }
 
 
@@ -59,10 +69,19 @@
     padding: 10px;
     box-shadow: 1px 90px 50px white;
     background-color: transparent;
-    
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+
 }
 
-@keyframes pulse {
-    from {box-shadow: 1px 10px 0px white;}
-    to {box-shadow: 1px 10px 50px white;}
-  }
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
