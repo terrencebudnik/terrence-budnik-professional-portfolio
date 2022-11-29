@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/terrence-budnik-professional-portfolio/static/css/main.6291d728.css",
+    "main.js": "/terrence-budnik-professional-portfolio/static/js/main.8ab324f1.js",
+    "static/media/myResume.pdf": "/terrence-budnik-professional-portfolio/static/media/myResume.8ecd1331bd7875f14c82.pdf",
+    "static/media/marvel.jpg": "/terrence-budnik-professional-portfolio/static/media/marvel.6dc9c57f8158b22182a1.jpg",
+    "static/media/ebook.jpg": "/terrence-budnik-professional-portfolio/static/media/ebook.e32bb02f959da6565ca3.jpg",
+    "static/media/text.jpg": "/terrence-budnik-professional-portfolio/static/media/text.310f91f6258151534e5c.jpg",
+    "index.html": "/terrence-budnik-professional-portfolio/index.html",
+    "main.6291d728.css.map": "/terrence-budnik-professional-portfolio/static/css/main.6291d728.css.map",
+    "main.8ab324f1.js.map": "/terrence-budnik-professional-portfolio/static/js/main.8ab324f1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6291d728.css",
+    "static/js/main.8ab324f1.js"
+  ]
+}
