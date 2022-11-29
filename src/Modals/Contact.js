@@ -1,32 +1,32 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import '../css/contact.css'
 
 
 export default function Contact(props) {
-    
-    return (
-        <div>
-            <Modal className='portfolio'
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">My Contact Information</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <ul>
-            <li>Email: terrence.budnik@gmail.com</li>
-        </ul>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-        </div>
-    )
+
+  return (
+    <div>
+      <Modal className='portfolio'
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+       <div>
+        <h2 className='contactHeader'>Send me an Email!</h2>
+      </div>
+        <Modal.Body>
+          <p  className='contactBody'>Reach Out Anytime</p>
+          <Button variant ="dark" onClick={() => window.location = 'mailto:terrence.budnik@gmail.com'} style={{marginLeft: "350px"}}>Contact Me</Button>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant ="dark" onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
+  )
 }
 
 

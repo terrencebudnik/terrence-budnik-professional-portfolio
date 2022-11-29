@@ -17,7 +17,8 @@ export default function Columns() {
   return (
     <>
       <div className='column-one'>
-        <Button className='portal-text' onClick={() => setAboutMeModalShow(true)}>About Me</Button>
+
+        <button className='portal-text' onClick={() => setAboutMeModalShow(true)}>About Me</button>
         <div className='portal'></div>
         <div> 
         <AboutMe 
@@ -28,7 +29,7 @@ export default function Columns() {
       </div>
 
       <div className='column-two'>
-      <Button className='portal-text' onClick={() => setPortfolioModalShow(true)}>Portfolio</Button>
+      <button className='portal-text' onClick={() => setPortfolioModalShow(true)}>Portfolio</button>
         <div className='portal'></div>
         <div> 
         <Portfolio 
@@ -39,7 +40,7 @@ export default function Columns() {
       </div>
 
       <div className='column-three'>
-      <Button className='portal-text' onClick={() => setResumeModalShow(true)}>My Resume</Button>
+      <button className='portal-text' onClick={() => setResumeModalShow(true)}>My Resume</button>
         <div className='portal'></div>
         <div> 
         <Resume
@@ -50,7 +51,7 @@ export default function Columns() {
       </div>
 
       <div className='column-four'>
-      <Button className='portal-text' onClick={() => setContactModalShow(true)}>Contact Info</Button>
+      <button className='portal-text' onClick={() => setContactModalShow(true)}>Contact Info</button>
         <div className='portal'></div>
         <div> 
         <Contact

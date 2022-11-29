@@ -7,22 +7,22 @@ export default function AboutMe(props) {
     
     return (
         <div>
-            <Modal className='about'
+            <Modal
       {...props}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">About Me</Modal.Title>
-      </Modal.Header>
+      <div>
+        <h2 className='aboutHeader'>About Me</h2>
+      </div>
       <Modal.Body>
-        <p>
-          Web Developer with a background in the performing arts. 
+        <p className='aboutBody'>
+          I spent many years looking for my passion. My search allowed me to have amazing experiences in Los Angeles and Chicago. After some serious thought, I decided to take an online Python course. Something clicked and that started my interest in programming. I enjoy working on projects and utilizing my past in the performing arts to bring my own creative style. I am continuing my coding education through online courses while looking for an exciting opportunity in web development. 
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+        <Button variant="dark" onClick={props.onHide}>Close</Button>
       </Modal.Footer>
     </Modal>
         </div>

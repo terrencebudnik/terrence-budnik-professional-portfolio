@@ -1,42 +1,60 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import '../css/resume.css'
+import myResume from '../Assets/myResume.pdf'
 
 
 export default function Resume(props) {
-    
-    return (
-        <div>
-            <Modal className='resume'
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">My Resume</Modal.Title>
-      </Modal.Header>
+
+  return (
+    <div>
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+      <div>
+        <h2 className='resumeHeader'>Resume Preview</h2>
+      </div>
       <Modal.Body>
-        <p>
-                                        Terrence Budnik  
-            (630) 205-0292            terrence.budnik@gmail.com    		Chicago, IL 
+        
+        <ul className='resumeBody'>
+            <li>
+                Front-End: React, HTML, JavaScript, CSS, Bootstrap
+            </li>
+        </ul>
 
-Web-Developer with prior experience in management, client-facing roles, and the performing arts.
+        <ul className='resumeBody'>
+            <li>
+            Back-End: Node.js, Express, API's, SQL, Mongo
+            </li>
+        </ul>
+        
 
-Education
+        <ul className='resumeBody'>
+            <li>
+                Education: Northwestern Full-Stack Web Development
+            </li>
+        </ul>
+       
 
-Advanced Certification:	        Northwestern University- Full Stack Web Development- November 2022     
+        <ul className='resumeBody'>
+            <li>
+                Work Experience: Recruiting Manager, Branch Manager, Project Manager 
+            </li>
+        </ul>
+        
 
-Undergraduate Degree:	         Illinois State University- Bachelor of Science  Aug 2013
-
-        </p>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-        </div>
-    )
+        <Modal.Footer>
+          <a href={myResume} target="_blank" style={{color: "black", marginRight: "225px"}}>Download My Full Resume</a>
+          <Button variant ="dark" onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
+  )
 }
 
 
